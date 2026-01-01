@@ -1,6 +1,5 @@
-import React, { useEffect, useState } from "react";
 import Counter from "../component/Counter";
-import {useTypewriter,Cursor } from 'react-simple-typewriter'
+import { useTypewriter, Cursor } from "react-simple-typewriter";
 
 const Home = () => {
   const ProudlyIcon = [
@@ -13,10 +12,9 @@ const Home = () => {
     { id: 7, icon: "/assets/ben-logo.svg" },
   ];
 
- 
-   const [text]   = useTypewriter({
+  const [text] = useTypewriter({
     words: ["  Tech solutions", "Web Development"],
-    loop: 0, 
+    loop: 0,
     typeSpeed: 80,
     deleteSpeed: 50,
     delaySpeed: 1500,
@@ -33,12 +31,13 @@ const Home = () => {
           className="text-[20px] md:text-[72px] font-bold 
         bg-gradient-to-r from-[#FE4A33] to-[#FEAEA4] bg-clip-text text-transparent"
         >
-        
-         <span className="inline">{text}</span>
-      <Cursor cursorStyle="|" />
+          <span className="inline">{text}</span>
+          <Cursor cursorStyle="|" />
         </span>
         <br />
-        <div className="text-center font-medium font-clash text-[30px]">Worldwide.</div>
+        <div className="text-center font-medium font-clash text-[30px]">
+          Worldwide.
+        </div>
       </h1>
 
       <div className="flex-row mt-[10%] md:mt-[5%]  md:flex justify-center gap-10">

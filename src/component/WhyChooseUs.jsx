@@ -2,7 +2,6 @@ import { useState } from "react";
 import Counter from "./Counter";
 
 export const WhyChooseUs = () => {
-  const [activeTab, setActiveTab] = useState(true);
   return (
     <section className="max-w-[1300px] mx-auto px-6 py-5 md:py-20">
       <div className="grid grid-cols-1 lg:grid-cols-3 gap-14 items-start">
@@ -111,7 +110,6 @@ export const WhyChooseUs = () => {
           <div className="flex items-end gap-4 mt-[40%]">
             <h2 className="font-clash bg-gradient-to-r from-[#FE4A33] to-[#FEAEA4] text-6xl md:text-8xl bg-clip-text text-transparent drop-shadow-lg leading-none">
               <Counter target={12} suffix="+" />
-              {/*   12+ */}
             </h2>
             <span className="font-clash font-semibold text-3xl md:text-4xl text-gray-800 mt-5">
               Industry Reach

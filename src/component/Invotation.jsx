@@ -21,9 +21,8 @@ const Invotation = () => {
 
      const dragState = useRef({ isDragging: false, startX: 0, scrollLeft: 0 });
 
-  // START drag
   const handleDragStart = (e) => {
-    e.stopPropagation(); // prevent card click
+    e.stopPropagation(); 
     const container = containerRef.current;
     dragState.current.isDragging = true;
     dragState.current.startX = e.pageX;
@@ -78,7 +77,7 @@ const Invotation = () => {
             <div
   key={item.id}
   onClick={() => setActive(item.id)}
-  onMouseEnter={() => setHovered(item.id)} // show DRAG → on hover
+  onMouseEnter={() => setHovered(item.id)} 
   onMouseLeave={() => setHovered(null)}
   className={`relative cursor-pointer transition-all duration-500 ease-in-out
     rounded-2xl border border-white/10
@@ -111,10 +110,10 @@ const Invotation = () => {
     </div>
   )}
 
-  {/* DRAG text shows only on hover */}
+
   {hovered === item.id && (
     <div
-      onMouseDown={handleDragStart} // only this triggers drag
+      onMouseDown={handleDragStart} 
       onMouseUp={handleDragEnd}
       className="absolute bottom-6 left-1/2 -translate-x-1/2
         text-white text-xs tracking-widest cursor-grab

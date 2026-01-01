@@ -1,4 +1,4 @@
-import React from "react";
+
 import { useNavigate } from "react-router-dom";
 
 const Footer = () => {
@@ -70,10 +70,10 @@ const Footer = () => {
           <div>
             <div className=" flex gap-2">
               <div>
-                <img src="/assets/azero-white.svg" />
+                <img src="/assets/azero-white.svg"  alt="azero-white"/>
               </div>
               <div>
-                <img src="/assets/azero-logo-white.svg" className=" mt-1" />
+                <img src="/assets/azero-logo-white.svg" className=" mt-1"  alt="azero-logo"/>
               </div>
             </div>
             <div className=" w-[313px] h-[72px] mt-3">
@@ -86,18 +86,22 @@ const Footer = () => {
               <img
                 className="hover:scale-110 transition"
                 src="/assets/Twitter → SVG.svg"
+                alt="twitter"
               />
               <img
                 className="hover:scale-110 transition"
                 src="/assets/linked.svg"
+                alt="linked"
               />
               <img
                 className="hover:scale-110 transition"
                 src="/assets/facebook.svg"
+                alt="facebook"
               />
               <img
                 className="hover:scale-110 transition"
                 src="/assets/insta.svg"
+                alt="insta"
               />
             </div>
           </div>
@@ -127,7 +131,7 @@ const Footer = () => {
       </div>
     </div>
  <footer className=" md:hidden w-full bg-[#242124] px-4 py-10 text-white flex flex-col gap-10 md:px-20">
-      {/* Back to top button */}
+   
       <div
         className="flex items-center gap-3 cursor-pointer"
         onClick={() => {
@@ -145,9 +149,9 @@ const Footer = () => {
         <span className="text-lg font-clash font-normal">Back to top</span>
       </div>
 
-      {/* Footer content */}
+     
       <div className="flex flex-col gap-10 md:flex-row justify-between">
-        {/* Contact info */}
+      
         <div className="flex flex-col gap-4 md:w-1/3">
           <div>
             <h4 className="font-clash text-base text-[#DDDDDD]">Email</h4>
@@ -163,7 +167,7 @@ const Footer = () => {
           </div>
         </div>
 
-        {/* Explore / consult */}
+       
         <div className="flex flex-col gap-3 md:w-1/3">
           <h1 className="font-clash text-lg leading-snug md:text-xl">
             Let’s explore ways to <br /> increase efficiency
@@ -177,7 +181,7 @@ const Footer = () => {
           </div>
         </div>
 
-        {/* Logo and social */}
+       
         <div className="flex flex-col gap-4 md:w-1/3">
           <div className="flex items-center gap-2">
             <img src="/assets/azero-white.svg" alt="Azero" className="w-8 h-auto"/>
@@ -195,7 +199,7 @@ const Footer = () => {
         </div>
       </div>
 
-      {/* Azero full-width image */}
+   
       <div className="w-full mt-5">
         <img
           src="/assets/AZERO TECH.svg"
@@ -204,7 +208,7 @@ const Footer = () => {
         />
       </div>
 
-      {/* Bottom copyright */}
+    
       <div className="mt-5 border-t border-white/20 pt-5 flex flex-col md:flex-row justify-between gap-2 text-sm md:text-base">
         <span className="font-clash">Copyright © AzeroTech 2026</span>
         <span className="font-clash">We respect your privacy</span>

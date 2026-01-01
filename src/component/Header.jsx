@@ -23,8 +23,16 @@ const Header = () => {
     <div className="fixed top-0 left-0 w-full z-50 bg-white shadow-md">
       <div className="px-6 lg:px-20 flex justify-between items-center py-3">
         <div className="flex gap-2 items-center">
-          <img src="/assets/azero-logo.svg" className="w-[70px]" />
-          <img src="/assets/azero-text.svg" className="w-[100px]" />
+          <img
+            src="/assets/azero-logo.svg"
+            className="w-[70px]"
+            alt="azero-logo"
+          />
+          <img
+            src="/assets/azero-text.svg"
+            className="w-[100px]"
+            alt="azero-text"
+          />
         </div>
 
         <ul className="hidden md:flex gap-6">
