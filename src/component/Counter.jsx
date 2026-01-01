@@ -19,11 +19,16 @@ const Counter = ({ target, suffix }) => {
       setCount(start);
     }, 50);
 
-    const currentRef = ref.current; 
+    const currentRef = ref.current;
     return () => clearInterval(counter);
   }, [target]);
 
-  return <span ref={ref}>{count}{suffix}</span>;
+  return (
+    <span ref={ref}>
+      {count}
+      {suffix}
+    </span>
+  );
 };
 
 export default Counter;

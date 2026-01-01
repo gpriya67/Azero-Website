@@ -41,6 +41,9 @@
       "last 1 safari version"
     ]
   },
+  "scripts": {
+  "build": "CI=false react-scripts build"
+},
   "devDependencies": {
     "tailwindcss": "^3.4.19"
   }
