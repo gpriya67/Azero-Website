@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import { useState } from "react";
 import { AiOutlinePlusCircle } from "react-icons/ai";
 import { FiMinusCircle } from "react-icons/fi";
 
@@ -53,7 +53,7 @@ const Questions = () => {
   };
 
   return (
-    <div className="w-full px-4 md:px-20 mt-10">
+    <div className="w-full px-4 md:px-20 mt-[10%]">
       <h2 className="font-clash font-medium text-3xl md:text-4xl text-center">
         Frequently Asked Questions
       </h2>
